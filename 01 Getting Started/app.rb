@@ -8,7 +8,7 @@ class GiftBasket < Sinatra::Base
   attr_reader :tokens
   API_KEY = ENV['API_KEY']
   API_SECRET = ENV['API_SECRET']
-  APP_URL = "https://e08b8dc4.ngrok.io"
+  APP_URL = ENV['APP_URL']
 
   def initialize
     @tokens = {}
